@@ -2,8 +2,6 @@
     display: none;
 }
 
-
-
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -347,6 +345,12 @@ button{
 @media screen and (min-width: 768px) {
   .mobile-menu{
     display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .mobile-menu {
+    flex-wrap: nowrap;
   }
 }
 
@@ -850,11 +854,11 @@ button{
   
     .footer-logo-container {
       max-width: 264px;
-      margin-right: 120px;
     }
   
     .footer-logo {
       display: block;
+      margin-bottom: 16px;
     }
   
     .footer-logo .logo-part {
@@ -995,7 +999,7 @@ button{
         }
 
         .footer-logo {
-          text-align: center;
+          text-align: start;
         }
 
         .footer-text-logo {
@@ -1030,6 +1034,9 @@ button{
           padding: 0 15px;
           flex-wrap: nowrap;
           gap: 0;
+          align-items: baseline;
+          margin: 0 auto;
+          flex-direction: row;
         }
 
         .footer-logo {
