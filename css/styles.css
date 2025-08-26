@@ -229,16 +229,16 @@ button{
       line-height: 1.5;
       letter-spacing: 0.02em;
 
-        position: relative;
+      position: relative;
         
-          display: block;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 1.5;
-          letter-spacing: 0.02em;
-          color: #2e2f42;
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
         
-          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -462,7 +462,7 @@ button{
   
     .qualitys-container {
       align-items: center;
-      max-width: 288px;
+
     }
   
     .qualitys-list {
@@ -499,7 +499,7 @@ button{
 
       .qualitys-container {
         align-items: center;
-        max-width: 736px;
+
       }
     
       .qualitys-list {
@@ -530,7 +530,8 @@ button{
     
       .qualitys-container {
         align-items: center;
-        max-width: 1128px;
+
+        flex;
       }
     
       .qualitys-list {
@@ -838,7 +839,7 @@ button{
     }
 
 
-    /*footer*/
+ /*footer*/
   
     .page-footer {
       background-color: #2e2f42;
@@ -859,6 +860,7 @@ button{
     .footer-logo {
       display: block;
       margin-bottom: 16px;
+      text-align: center;
     }
   
     .footer-logo .logo-part {
@@ -992,10 +994,11 @@ button{
 
 @media screen and (min-width: 768px) {
       .footer-container {
-          padding: 0 108px;
-          align-items: baseline;
+        flex-direction: row;
+        align-items: flex-start;          
           flex-wrap: wrap;
           column-gap: 24px;
+          padding: 0 108px;
         }
 
         .footer-logo {
@@ -1006,8 +1009,13 @@ button{
           max-width: 264px;
         }
 
+        .footer-logo-container {
+          margin-right: 120px;
+        }
+
         .footer-socials-container {
           align-items: start;
+          margin-right: 80px;
         }
 
         .container-form {
@@ -1041,6 +1049,7 @@ button{
 
         .footer-logo {
           margin-right: 120px;
+          text-align: start;
         }
 
         .container-form {
